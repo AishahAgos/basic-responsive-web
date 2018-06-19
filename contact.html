@@ -1,0 +1,138 @@
+<!--Source code is credited to the owner
+    
+    EDITOR : AISHAH AGOS
+    PROJECT NAME : SA DESTECH
+    START : 19th JUNE 2018
+    FINISH : ????
+
+    THIS IS A "CONTACT" PAGE
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!--enable the webpage to be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SA Design &amp; Technology</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for the sidebar template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Main styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <br>
+                <li class="sidebar-brand">
+                    <a href="index.html"><center><img src="img/logo.png" width="180px"></center></a>
+                </li>
+                <br><br><br>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1 class="header">Thanks for visiting 
+                    <br><b>SA Design &amp; Technology</b></h1>
+                <center><a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Learn more about us</a></center>
+                <br><br><br>
+
+                <p>Learning is a continuous process that a person should face in his/her entire life. Feel free to drop your message to help us in improving ourselves and services for a better future. We feel glad to have you here. Thank you.</p>
+               
+                <br>
+
+                <!-- CONTACT FORM START HERE -->
+                <div class="container">
+                    <form action="/action_page.php">
+                        
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" placeholder="Your e-mail here.">
+
+                        <label for="region">Region</label>
+                        <select id="region" name="region">
+                            <option value="asia">Asia</option>
+                            <option value="afrika">Afrika</option>
+                            <option value="north-America">North-America</option>
+                            <option value="south-america">South-America</option>
+                            <option value="australia">Australia</option>
+                            <option value="europe">Europe</option>
+                            <option value="russia">Russia</option>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height: 200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <br>
+                <br>
+
+
+
+                <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
+
+               
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

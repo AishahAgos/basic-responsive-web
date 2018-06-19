@@ -1,0 +1,179 @@
+<!--Source code is credited to the owner
+    
+    EDITOR : AISHAH AGOS
+    PROJECT NAME : SA DESTECH
+    START : 19th JUNE 2018
+    FINISH : ????
+
+    THIS IS A "PORTFOLIO" PAGE
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!--enable the webpage to be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SA Design &amp; Technology</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for the sidebar template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Main styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <br>
+                <li class="sidebar-brand">
+                    <a href="index.html"><center><img src="img/logo.png" width="180px"></center></a>
+                </li>
+                <br><br><br>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="header" id="myHeader">
+                <h1>Portfolio</h1>
+                </div>
+                <br>
+                <center><a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Learn more about us</a></center>
+                <br><br><br>
+
+                <p style="text-align: center">This page contains the previous work of SA DesTech which consists the end-product of graphic design and web design services.</p>
+                <p style="text-align: center">Click on the button to change the grid view.</p>
+                
+
+                <center>
+                <button class="btn" onclick="one()">1</button>
+                <button class="btn" onclick="two()">2</button>
+                <button class="btn" onclick="four()">4</button>
+                </center>
+
+                <br>
+                <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->            
+            </div>
+
+            <!--Photo Grid-->
+            <div class="row">
+                <div class="column">
+                    <img src="portfolio/qc.jpg" width="100%">
+                    <img src="portfolio/tn.jpg" width="100%">
+                    <img src="portfolio/raya1.png" width="100%">
+                    <img src="portfolio/raya2.png" width="100%">
+                </div>
+                <div class="column">
+                    <img src="portfolio/qc.jpg" width="100%">
+                    <img src="portfolio/tn.jpg" width="100%">
+                    <img src="portfolio/raya1.png" width="100%">
+                    <img src="portfolio/raya2.png" width="100%">
+                </div>
+                <div class="column">
+                    <img src="portfolio/qc.jpg" width="100%">
+                    <img src="portfolio/tn.jpg" width="100%">
+                    <img src="portfolio/raya1.png" width="100%">
+                    <img src="portfolio/raya2.png" width="100%">
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <!-- Photo Grid Script -->
+    <script>
+
+    //Menu Toggle Jquery
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+    //Photo Grid JavaScript
+    //get element with class "column"
+    var elements = document.getElementsByClassName("column");
+    //declare a loop variable
+    var i;
+
+    //full-width img
+    function one(){
+        for(i=0; i<elements.length; i++)
+        {
+            elements[i].style.msFlex = "100%";
+            elements[i].style.flex = "100%";
+        }
+    }
+    // 2 img side-by-side
+    function two(){
+        for(i=0; i<elements.length; i++)
+        {
+            elements[i].style.msFlex = "50%";
+            elements[i].style.flex = "50%";
+        }
+    }
+    // 3 img side-by-side
+    function four(){
+        for(i=0; i<elements.length; i++)
+        {
+            elements[i].style.msFlex = "25%";
+            elements[i].style.flex = "25%";
+        }
+    }
+
+    //add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = document.getElementsByClassName("btn");
+    for (var i = 0; i<btns.length; i++)
+    {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "");
+            this.className += "active";
+            1});
+    } 
+
+    </script>
+
+</body>
+
+</html>
